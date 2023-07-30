@@ -1,0 +1,343 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+  border: 2px solid rgb(165, 155, 155);
+  width: 100%;
+  user-select: none;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  border-radius: 10px;
+}
+
+
+body {
+  background: #a872ff;
+}
+
+body,
+input,
+button {
+  letter-spacing: 1.4px;
+}
+
+.background {
+  display: flex;
+  min-height: 557px;
+  background: #a872ff;
+
+}
+
+.container {
+  flex: 0 1 700px;
+  margin: auto;
+  padding: 10px;
+
+}
+
+.screen {
+  position: relative;
+  background: #3e3e3e;
+  border-radius: 15px;
+}
+
+.screen:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+  z-index: -1;
+}
+
+.screen-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: #4d4d4f;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.screen-header-left {
+  margin-right: auto;
+}
+
+.screen-header-button {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+  border-radius: 8px;
+  background: white;
+}
+
+.screen-header-button.close {
+  background: #a872ff;
+}
+
+.screen-header-button.maxinize {
+  background: #e8e925;
+}
+
+.screen-header-button.minimize {
+  background: #74c54f;
+}
+
+.screen-header-right {
+  display: flex;
+}
+
+.screen-header-ellipsis {
+  width: 3px;
+  height: 3px;
+  margin-left: 2px;
+  border-radius: 8px;
+  background: #999;
+}
+
+.screen-body {
+  display: flex
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #a872ff;
+}
+
+.app-title:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 25px;
+  height: 4px;
+  background: #a872ff
+}
+
+.app-contact {
+  margin-top: auto;
+  font-size: 12px;
+  color: #a872ff;
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group-message {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.app-form-group-button {
+  margin-bottom: 0;
+  text-align: right;
+
+}
+
+.buttons button:hover {
+  transform: scale(1.1);
+}
+
+
+
+section {
+  left: 0;
+  bottom: 12px;
+  width: 100%;
+  background: #172940;
+  padding-top: 60px;
+
+}
+
+footer {
+  user-select: none;
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  margin: 0 30px;
+  height: 90px;
+  color: #a2b5cd;
+
+}
+
+footer>img {
+  height: 100px;
+  margin-left: 20px;
+
+}
+
+footer .top {
+  border-bottom: 2px solid #3a4f6a;
+  padding-bottom: 20px;
+}
+
+footer .top .links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+
+
+}
+
+footer .bottom {
+  padding: 20px 0;
+  justify-content: space-between;
+}
+
+footer .links>div {
+  display: grid;
+  gap: 20px;
+  margin-bottom: 30px;
+  height: 80px;
+}
+
+footer h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #f7f7f7;
+
+}
+
+footer .legal {
+  font-size: 12px;
+}
+
+footer .legal>a {
+  margin: 0 4px;
+}
+
+footer .legal>span {
+  margin-right: 10px;
+}
+
+footer .bottom .links {
+  display: flex;
+  gap: 18px;
+
+}
+
+
+
+
+@media (wiidht < 620px) {
+  footer {
+    flex-direction: column;
+  }
+
+  footer .bottom {
+    gap: 16px;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (widht >=620px) {
+  footer {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0;
+  }
+}
+
+footer .bottom .links>a {
+  font-size: 24px;
+}
+
+@media (widht < 420px) {
+  footer {
+    text-align: center;
+    align-items: center;
+  }
+
+  footer .top .links {
+    grid-template-columns: 1fr;
+  }
+
+  footer .bottom {
+    align-items: center;
+  }
+
+  footer .legal>span {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 2px;
+  }
+}
+
+@media (width < 720) {
+  main {
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+
+@media (width < 420px) {
+
+  footer>img {
+    margin-left: 0;
+  }
+}
+
+@media (width < 475px) {
+
+    nav{
+     width: 500px;
+    }
+
+    main{
+      width: 500px;
+      height: 1000px;
+    }
+main > section{
+  justify-content:end;
+  height: 300px;
+}
+    .container{
+      margin-top: 30px;
+      height: 700px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+}
+
+@media (width > 475px) {
+
+  main > section{
+    height: 265px;
+  }
+}

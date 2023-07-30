@@ -1,0 +1,67 @@
+Algoritmo "Entrega"
+
+Var
+   clientes: vetor[1..5] de caracter
+   destinos: vetor[1..5] de caracter
+   opcao:inteiro
+   x:inteiro
+   z:inteiro
+   email:caractere
+   preco:real
+
+Inicio
+
+escreval      ("  - ======== Bem Vindos a Agencia Turistica Noturna ===========")
+
+   repita
+      escreval("1 - ================== Cadastrar Cliente: ======================")
+      escreval("2 - ================== Consultar Clientes: ======================")
+      escreval("3 - ================== Cadastrar Destinos: ======================")
+      escreval("4 - ================== Consultar Destinos: ======================")
+      escreval("5 - ========================= Sair ============================== ")
+      leia(opcao)
+
+      escolha(opcao)
+
+      caso 1
+      limpatela
+         para x de 1 ate 5 faca
+         escreval("Digete o nome do cliente: ")
+         escreval("Digite o email do cliente : ")
+          leia(clientes[x])
+          leia(email[x])
+          fimpara
+           caso 2
+           limpatela
+         para x de 1 ate 5 faca
+          escreval("Cliente Consultado : ",clientes[x])
+          escreval("Email do Cliente Consultado : ",email[x])
+          fimpara
+           caso 3
+           limpatela
+         para z de 1 ate 5 faca
+         escreval("Digete o Destino : ")
+          escreval("Digete o Valor a pagar para esse Destino : ")
+          leia(destinos[z])
+          leia(preco[z])
+          fimpara
+           caso 4
+           limpatela
+         para z de 1 ate 5 faca
+          escreval("Destino Consultado : ",destinos[z])
+          escreval("Preço do Destino Consultado : ",preco[z])
+          fimpara
+           caso 5
+           limpatela
+         escreval("Programa Finalizado!!!")
+
+          outrocaso
+          limpatela
+          escreval("Opcao Invalida!")
+          escreval("Tente Novamente!")
+          fimescolha
+
+         ate opcao = 5
+
+Fimalgoritmo
+
