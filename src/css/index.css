@@ -24,6 +24,7 @@ img{
     width: 100%;
     height: 100%;
     color: white; 
+    background-color: #acacac;
 }
 
 .bv{
@@ -58,16 +59,18 @@ img{
 }
 
 .cards{
-    background-color: black;
+    background-color: #acacac;
     display: flex;
     gap:20px;
     justify-content: center;
-    padding: 15px;
+    padding: 15px; 
+    margin-top: 40px;
 }
 
 .cards .card{
 
     width: 18rem;
+    height: 315px;
 }
     
   section {
@@ -86,6 +89,7 @@ footer{
     margin: 0 30px;
     height: 90px;
     color: #a2b5cd;
+   
 } 
 
 footer > img{
