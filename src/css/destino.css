@@ -85,7 +85,7 @@ footer {
 }
 
 footer>img {
-  height: 100px;
+  height: 92px;
   margin-left: 20px;
   margin-bottom: 30px;
 }
@@ -126,8 +126,8 @@ footer .legal>a {
 
 footer .legal>span {
   margin-right: 10px;
+  font-size: 14px;
 }
-
 
 
 @media (wiidht < 620px) {
@@ -195,4 +195,9 @@ main{
   footer > img{
       margin-left: 0;
   }
+  footer > img{
+    margin-left: 0;
+    height: 70px;
+    width: 70px;
+}
 }

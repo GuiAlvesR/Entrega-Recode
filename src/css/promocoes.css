@@ -119,75 +119,60 @@ section {
   width: 100%;
   background: #172940;
   padding-top: 60px;
- 
 }
 
-footer{
+footer {
   user-select: none;
   display: flex;
-  align-items: flex-end;
-  gap: 20px;
+  align-items: flex-start;
+  gap: 40px;
   margin: 0 30px;
-  height: 90px;
   color: #a2b5cd;
-  
+
 }
 
-footer > img{
-  height: 100px;
+footer>img {
+  height: 92px;
   margin-left: 20px;
-
+  margin-bottom: 30px;
 }
 
-footer .top{
+footer .top {
   border-bottom: 2px solid #3a4f6a;
   padding-bottom: 20px;
 }
 
-footer .top .links{
+footer .top .links {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-
-
 }
 
-footer .bottom {
-  padding: 20px 0;
-  justify-content: space-between;
-}
 
-footer .links > div {
-  display:grid;
-  gap:20px;
+
+footer .links>div {
+  display: grid;
+  gap: 20px;
   margin-bottom: 30px;
-  height: 80px;
 }
 
 footer h2 {
   margin: 0;
   font-size: 16px;
   font-weight: 400;
-  color: #f7f7f7;
-  
+  color: #f7f7f7
 }
 
-footer .legal{
+footer .legal {
   font-size: 12px;
 }
 
-footer .legal > a {
+footer .legal>a {
   margin: 0 4px;
 }
 
-footer .legal > span {
+footer .legal>span {
   margin-right: 10px;
-}
-
-footer .bottom .links{
-  display: flex;
-  gap: 18px;
- 
 }
 
 
@@ -240,4 +225,9 @@ footer .bottom .links > a{
   footer > img{
       margin-left: 0;
   }
+  footer > img{
+    margin-left: 0;
+    height: 70px;
+    width: 70px;
+}
 }
