@@ -41,10 +41,11 @@ Inicio
             escreval("Digite o email",y,"° do cliente : ")
             leia(email[y])
          fimpara
+         escreval("")
       caso 2
          limpatela
-         escreval("====================== Consulta de Clientes: ===================")
          escreval("")
+         escreval("====================== Consulta de Clientes: ===================")
          para x de 1 ate 5 faca
             escreval(x,"° Cliente Consultado : ",clientes[x])
          fimpara
@@ -55,7 +56,6 @@ Inicio
       caso 3
          limpatela
          escreval("====================== Cadastra de Destinos: =====================")
-         escreval("")
          para z de 1 ate 5 faca
             escreval("Digete o",z," ° Destino : ")
             leia(destinos[z])
@@ -64,10 +64,11 @@ Inicio
             escreval("Digete o Valor a pagar para esse",i,"° Destino : ")
             leia(preco[i])
          fimpara
+         escreval("")
       caso 4
          limpatela
-         escreval("===================== Consulta de Destinos: ====================")
          escreval("")
+         escreval("===================== Consulta de Destinos: ====================")
          para z de 1 ate 5 faca
             escreval(z,"° Destino Consultado : ",destinos[z])
          fimpara
@@ -77,9 +78,9 @@ Inicio
          escreval("")
       caso 5
          limpatela
-         escreval("-----------Programa Finalizado!!!--------")
-         escreval("----------------Obrigado!----------------")
-         escreval("---------O Menu foi Concluido!!!---------")
+         escreval("----------- Programa Finalizado!!! --------")
+         escreval("---------------- Obrigado! ----------------")
+         escreval("--------- O Menu foi Concluido!!! ---------")
 
       outrocaso
          limpatela
@@ -90,4 +91,3 @@ Inicio
    ate opcao = 5
 
 Fimalgoritmo
-
