@@ -1,39 +1,39 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    font-family: 'Times New Roman', Times, serif ;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
 }
 
-nav{
-    border:2px solid rgb(165, 155, 155);
-    width: 100%;  
-    user-select: none; 
+nav {
+  border: 2px solid rgb(165, 155, 155);
+  width: 100%;
+  user-select: none;
 }
 
-main{
+main {
   width: 100%;
   height: 100%;
-  
+
 }
 
-img{  
+img {
   border-radius: 10px;
 }
 
-.promocoes{
+.promocoes {
   margin: 20px;
   user-select: none;
- 
+
 }
 
-.promocoes .title{
+.promocoes .title {
   justify-content: center;
   align-items: center;
   display: flex;
 }
 
-.promocoes .title > h4{
-   text-align: center;
+.promocoes .title>h4 {
+  text-align: center;
   background-color: black;
   color: #fff;
   text-transform: uppercase;
@@ -41,76 +41,76 @@ img{
   width: 500px;
 }
 
-.col{
+.col {
   padding-top: 20px;
- 
+
 }
 
 
-.card-text{
+.card-text {
   font-size: 12px;
-    letter-spacing: 1px;
-    line-height: 16px;
-    font-weight: 500;
-    text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
 
 }
 
-.ida{
+.ida {
   display: inline-flex;
   align-items: center;
   max-width: 210px;
   height: 24px;
   padding: 0 8px;
   border-radius: 4px;
-  overflow: hidden; 
-  background-color:#b9b9b9;
+  overflow: hidden;
+  background-color: #b9b9b9;
   color: #fff;
-  
- 
+
+
 }
 
-.preco{
+.preco {
   display: grid;
-    position: relative;
-    grid-template-columns: 80% 20%;
-    padding: 10px 0 8px 5px;
-    border-top: 1px solid;
-   font-size: 12px;
-    line-height: 16px;
-    font-weight: 400;
-    grid-column-end: span 2;
-    margin-right: 20px;
-    margin-top: 8px!important;
-  }
+  position: relative;
+  grid-template-columns: 80% 20%;
+  padding: 10px 0 8px 5px;
+  border-top: 1px solid;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  grid-column-end: span 2;
+  margin-right: 20px;
+  margin-top: 8px !important;
+}
 
-.p{
+.p {
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
   grid-column-end: span 2;
 }
 
-.v{
+.v {
   font-size: 24px;
-    line-height: 32px;
-    font-weight: 500;
-    font-weight: 400;
-    display: flex;
-    gap: 8px;  
+  line-height: 32px;
+  font-weight: 500;
+  font-weight: 400;
+  display: flex;
+  gap: 8px;
 }
 
 
-.r{
+.r {
   font-size: 14px;
-letter-spacing: .05px;
-line-height: 20px;
+  letter-spacing: .05px;
+  line-height: 20px;
 }
 
-.val{
+.val {
   font-size: 18px;
   line-height: normal;
-line-height: initial;
+  line-height: initial;
 }
 
 section {
@@ -178,56 +178,61 @@ footer .legal>span {
 
 
 
-@media (wiidht < 620px){
-  footer{
-      flex-direction: column;
+@media (wiidht < 620px) {
+  footer {
+    flex-direction: column;
   }
-  footer .bottom{
-      gap: 16px;
-      flex-direction: column-reverse;
+
+  footer .bottom {
+    gap: 16px;
+    flex-direction: column-reverse;
   }
 }
 
-@media (widht >= 620px){
-  footer{
-      margin: 0 auto;
-      max-width: 600px;
-      padding: 0;
+@media (widht >=620px) {
+  footer {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0;
   }
 }
 
-footer .bottom .links > a{
+footer .bottom .links>a {
   font-size: 24px;
 }
 
 @media (widht < 420px) {
-  footer{
-      text-align: center;
-      align-items: center;
+  footer {
+    text-align: center;
+    align-items: center;
   }
-  footer .top .links{
-       grid-template-columns: 1fr;
+
+  footer .top .links {
+    grid-template-columns: 1fr;
   }
-  footer .bottom{
-      align-items: center;
+
+  footer .bottom {
+    align-items: center;
   }
-  footer .legal > span{
-      display: block;
-      margin-right: 0;
-      margin-bottom: 2px;
+
+  footer .legal>span {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 2px;
   }
 }
 
 
 
 @media (width < 420px) {
-  
-  footer > img{
-      margin-left: 0;
+
+  footer>img {
+    margin-left: 0;
   }
-  footer > img{
+
+  footer>img {
     margin-left: 0;
     height: 70px;
     width: 70px;
-}
+  }
 }

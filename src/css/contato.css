@@ -191,7 +191,7 @@ footer {
 
 footer>img {
   height: 92px;
-  
+
   margin-bottom: 30px;
 }
 
@@ -211,7 +211,7 @@ footer .top .links {
 footer .links>div {
   display: grid;
   gap: 25px;
-  
+
 }
 
 footer h2 {
@@ -295,33 +295,35 @@ footer .bottom .links>a {
   footer>img {
     margin-left: 0;
   }
-  footer > img{
+
+  footer>img {
     margin-left: 0;
     height: 90px;
     width: 90px;
-}
+  }
 }
 
 @media (width < 475px) {
 
-    nav{
-     width: 500px;
-    }
+  nav {
+    width: 500px;
+  }
 
-    main{
-      width: 500px;
-      height: 1000px;
-    }
-main > section{
-  justify-content:end;
-  height: 200px;
-}
-    .container{
-      margin-top: 30px;
-      height: 700px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-}
+  main {
+    width: 500px;
+    height: 1000px;
+  }
 
+  main>section {
+    justify-content: end;
+    height: 200px;
+  }
+
+  .container {
+    margin-top: 30px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
