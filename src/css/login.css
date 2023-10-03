@@ -15,7 +15,7 @@ body {
   font-family: Roboto, system-ui, sans-serif;
   background-color: #242d34;
   color: #e7e9ea;
-  height: 140vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,17 +36,16 @@ a {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 600px;
   width: 100%;
-  height: 100%;
   background-color: #000;
   padding: 24px 20px;
   border-radius: 16px;
   margin-inline: 2rem;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
 
 .header {
@@ -76,13 +75,13 @@ a {
 }
 
 .content {
-  width: 500px;
+  width: 300px;
   text-align: center;
   margin-inline: auto;
 }
 
 .content h1 {
-  margin-block: 20px
+  margin-block: 28px;
 }
 
 .action-buttons {
@@ -92,13 +91,13 @@ a {
   margin-top: 36px;
 }
 
-.primary-button {
-  width: 80%;
+.primary-button,
+.secondary-button {
+  width: 100%;
   border-radius: 20px;
   padding: 8px 0;
   font-size: 15px;
   font-weight: 500;
-
 }
 
 .primary-button {
@@ -110,13 +109,21 @@ a {
   background-color: #e6e6e6;
 }
 
+.secondary-button {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #536471;
+}
+
+.secondary-button:hover {
+  background-color: #181919;
+}
+
 .sign-in-button {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  margin-left: 50px;
- 
 }
 
 .sign-in-button object {
@@ -128,8 +135,6 @@ a {
   width: 100%;
   margin-block: 20px;
   position: relative;
-  display: flex;
-  justify-content: center;
 }
 
 .divider p::before,
@@ -151,121 +156,22 @@ a {
   right: 0;
 }
 
-
-.nome-log-in {
-  width: 100%;
-  position: relative;
-  margin-bottom: 10px;
-}
-
-.nome-log-in input {
-  width: 70%;
-  border-radius: 6px;
-  background-color: transparent;
-  border: 1px solid #333639;
-  outline: none;
-  padding: 15px 10px;
-  color: white;
-  font-size: 14px;
-  font-family: "Roboto";
-  display: flex;
-}
-
-.senha-log-in {
-  width: 100%;
-  position: relative;
-  margin-bottom: 10px;
-}
-
-.senha-log-in input {
-  width: 30%;
-  border-radius: 6px;
-  background-color: transparent;
-  border: 1px solid #333639;
-  outline: none;
-  padding: 15px 10px;
-  color: white;
-  font-size: 14px;
-  font-family: "Roboto";
-  display: flex;
-}
-
-.confirme-log-in {
-  width: 100%;
-  position: relative;
-  margin-bottom: 10px;
-}
-
-.confirme-log-in input {
-  width: 30%;
-  border-radius: 6px;
-  background-color: transparent;
-  border: 1px solid #333639;
-  outline: none;
-  padding: 15px 10px;
-  color: white;
-  font-size: 14px;
-  font-family: "Roboto";
-  display: flex;
-}
-
-.cpf-log-in {
-  width: 100%;
-  position: relative;
-  margin-bottom: 10px;
-}
-
-.cpf-log-in input {
-  width: 30%;
-  border-radius: 6px;
-  background-color: transparent;
-  border: 1px solid #333639;
-  outline: none;
-  padding: 15px 10px;
-  color: white;
-  font-size: 14px;
-  font-family: "Roboto";
-  display: flex;
-}
-
-.tel-log-in {
-  width: 100%;
-  position: relative;
-  margin-bottom: 10px;
-}
-
-.tel-log-in input {
-  width: 30%;
-  border-radius: 6px;
-  background-color: transparent;
-  border: 1px solid #333639;
-  outline: none;
-  padding: 15px 10px;
-  color: white;
-  font-size: 14px;
-  font-family: "Roboto";
-  display: flex;
-}
-
 .email-log-in {
   width: 100%;
   position: relative;
-  margin-bottom: 10px;
 }
 
 .email-log-in input {
-  width: 50%;
+  width: 100%;
   border-radius: 6px;
   background-color: transparent;
   border: 1px solid #333639;
   outline: none;
-  padding: 15px 10px;
+  padding: 20px 10px;
   color: white;
-  font-size: 14px;
+  font-size: 18px;
   font-family: "Roboto";
-  display: flex;
 }
-
 
 input::placeholder {
   opacity: 0;
@@ -273,8 +179,8 @@ input::placeholder {
 
 input+label {
   position: absolute;
-  top: 10px;
-  left: 1px;
+  top: 20px;
+  left: 10px;
   color: #71767b;
   font-size: 18px;
   pointer-events: none;
@@ -309,10 +215,4 @@ input:focus+label {
 .sign-up a:hover {
   text-decoration: underline;
   text-decoration-color: #1d9bf0;
-}
-
-@media(max-width < 600px) {
-  .container>div {
-    width: 80%;
-  }
 }

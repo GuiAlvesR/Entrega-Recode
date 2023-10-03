@@ -4,55 +4,161 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agencia De Viagens</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="stylesheet" href="./src/css/cadastro.css">
+  <title>Agência De Viagens</title>
+
+  <link rel="stylesheet" href="./src/css/index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
 </head>
 
 <body>
-  <div class="container">
-    <div class="header">
-      <button class="close-button">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-      <img src="./src/img/travel.png" alt="logo" height="99px" width="100px">
+  <main>
+
+    <div class="principal">
+
+      <header>
+
+        <div class="nav">
+          <nav class="navbar bg-body-tertiary" class="navbar bg-body-tertiary"
+            class="navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+              <img src="./src/img/travel.png" alt="logo agencia" width="80px" height="80px"
+                class="d-inline-block align-text-top">
+              <a class="navbar-brand" href="./home.html">
+                Inicio
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Agência</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <ol class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item"> <a href="./src/html/cadastro.html" class="nav-link active">Inscreva-se</a>
+                      </li>
+                      <li> <a href="./src/html/login.html" class="nav-link active">Entrar</a></li>
+                    </ol>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./src/html/destino.html">Destinos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="./src/html/promocoes.html">Promoções</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="./src/html/contato.html">Contato</a>
+                    </li>
+                  </ul>
+
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                  </form>
+
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
     </div>
 
-    <div class="content">
-      <h1>Entrar na Agencia</h1>
+    <div class="corpo">
 
-      <div class="action-buttons">
-        <button class="primary-button sign-in-button">
-          <object data="./src/img/google.png"></object>
-          <a href="./src/html/home.html"> <span>Faça login no Google</span>
-
-        </button></a>
-        <button class="primary-button sign-in-button">
-          <object data="./src/img/facebook.png"></object>
-          <a href="./src/html/home.html"> <span>Entrar com o Facebook</span>
-        </button></a>
+      <div class="bv">
+        <div class="texto">
+          <h1>Bem Vindo a Agência Turística Noturna</h1>
+          <p>Seu estilo combina mais com praia, campo ou montanha? Independente da geografia do local, a gente quer te
+            ajudar a curtir sua viagem com tudo que você tem direito, a começar da tranquilidade. Agência Turística
+            Noturna, converse com agente e vamos criar juntos um roteiro maravilhoso e que seja a sua cara, no destino e
+            no custo. Explore viagens, viajar é possível.</p>
+          <a href="./src/html/destino.html" type="button" class="btn btn-light">Aproveite</a>
+        </div>
       </div>
 
-      <div class="divider">
-        <p>ou</p>
-      </div>
+      <div class="cartao">
+        <div class="cards">
 
-      <div class="email-log-in">
-        <input type="text" id="log-in" placeholder="Email">
-        <label for="log-in">
-          Telefone, e-mail ou nome de usuário</label>
-      </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Sobre Nós</h5>
+              <hr>
+              <p class="card-text">A nossa Agência Viagens e no mercado a partir da união de dois profissionais
+                experientes vindos de diferentes áreas: turismo e informação. A soma desses dois olhares conduziu a uma
+                proposta de trabalho diferenciada, com o objetivo de oferecer um serviço não só com qualidade, mas com
+                conteúdo. </p>
 
-      <div class="action-buttons">
-        <a href="./src/html/home.html">
-          <button class="primary-button">Proximo </button></a>
-        <button class="secondary-button">Esqueceu sua senha?</button>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Sua Viagem Conosco</h5>
+              <hr>
+              <p class="card-text">O sucesso de uma viagem se inicia na escolha do destino, no planejamento, por isso
+                fornecemos os melhores serviços e produtos turísticos existentes.</p>
+
+            </div>
+          </div>
+
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Missão</h5>
+              <hr>
+              <p class="card-text"> Levar os clientes para os melhores lugares do Brasil e do mundo, oferecendo todos os
+                serviços de qualidade,com categoria e agilidade no atendimento, superando expectativas e proporcionando
+                tranqüilidade para o cliente.</p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="rodape">
+        <section>
+          <footer class="top">
+            <img src="./src/img/travel.png">
+            <div class="links">
+              <div>
+                <h2>Plataforma</h2>
+                <a href="./src/html/contato.html">Contato</a>
+              </div>
+            </div>
+          </footer>
+
+          <footer class="bottom">
+            <div class="legal">
+              <span> © Todos os direitos ... </span>
+              <a href="">Licença</a>
+              <a href="">Terms and Conditions</a>
+              <a href=""> Privacy Policy</a>
+            </div>
+          </footer>
+        </section>
       </div>
     </div>
-    <div class="sign-up">
-      <p>Não tem uma conta? <a href="./src/html/home.html">Inscrever-se</a></p>
-    </div>
-  </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
+
 </body>
 
 </html>

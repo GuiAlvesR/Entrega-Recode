@@ -16,8 +16,16 @@ nav {
     user-select: none;
 }
 
+.nav-item{
+    width: 100px;
+}
+
 img {
     border-radius: 10px;
+}
+
+ol{
+    padding-bottom  :10px;
 }
 
 .corpo {
@@ -70,11 +78,14 @@ a {
 
 }
 
-.cards .card {
+.card:hover {
+    transform: scale(1.1);
+}
 
+.cards .card {
     width: 18rem;
     height: 320px;
-
+    transition: transform 1.0s;
 }
 
 section {
@@ -119,9 +130,15 @@ footer .links>div {
     margin-bottom: 30px;
 }
 
-a {
+footer a {
     margin-left: 10px;
     padding-top: 18px;
+    text-decoration: none;
+    color: #7173db;
+}
+
+footer a:hover{
+color: #104a97;
 }
 
 

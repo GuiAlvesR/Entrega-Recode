@@ -189,6 +189,18 @@ footer {
 
 }
 
+footer a {
+  margin-left: 10px;
+  padding-top: 18px;
+  text-decoration: none;
+  color: #7173db;
+}
+
+footer a:hover{
+color: #104a97;
+}
+
+
 footer>img {
   height: 92px;
 
