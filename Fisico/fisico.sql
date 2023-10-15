@@ -12,7 +12,7 @@ CREATE TABLE Destinos (
 Id_Destino INT AUTO_INCREMENT PRIMARY KEY,
 Nome VARCHAR(50),
 Descrição VARCHAR(400),
-Preço VARCHAR(50)
+Preço INT
 );
 
 CREATE TABLE Promoçoes (
@@ -51,14 +51,14 @@ Id_Passagem INT AUTO_INCREMENT PRIMARY KEY,
 Data_da_Venda DATETIME,
 DatadaPartida DATETIME,
 DatadeRetorno DATETIME,
-Preço_Passagem VARCHAR(10),
+Preço_Passagem INT,
 NumerodeVoo VARCHAR(20)
 );
 
 CREATE TABLE Compra_de_Passagem (
 Id_Compra_Passagem INT AUTO_INCREMENT PRIMARY KEY,
 Data_da_Compra DATETIME,
-Valor_Pago VARCHAR(20),
+Valor_Pago INT,
 Status VARCHAR(20),
 Id_Passagem int,
 FOREIGN KEY(Id_Passagem) REFERENCES Passagem (Id_Passagem)
