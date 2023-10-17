@@ -4,42 +4,42 @@ USE agenciaTuristicaNoturna;
 
 CREATE TABLE Agencia (
 Id_Agencia INT AUTO_INCREMENT PRIMARY KEY,
-Nome VARCHAR(50),
-Descrição VARCHAR(400)
+Nome VARCHAR(50) NOT NULL,
+Descrição VARCHAR(400) NOT NULL
 );
 
 CREATE TABLE Destinos (
 Id_Destino INT AUTO_INCREMENT PRIMARY KEY,
-Nome VARCHAR(50),
-Descrição VARCHAR(400),
-Preço INT
+Nome VARCHAR(50) NOT NULL,
+Descrição VARCHAR(400) NOT NULL,
+Preço INT NOT NULL
 );
 
 CREATE TABLE Promoçoes (
 Id_Promoção INT AUTO_INCREMENT PRIMARY KEY,
-Nome VARCHAR(50),
-Descrição VARCHAR(200),
-Preço_Promocional INT,
-DatadeInicio DATETIME,
-DatadeTérmino DATETIME,
-Id_Destino INT,
+Nome VARCHAR(50) NOT NULL,
+Descrição VARCHAR(200) NOT NULL,
+Preço_Promocional INT NOT NULL,
+DatadeInicio DATETIME NOT NULL,
+DatadeTérmino DATETIME NOT NULL,
+Id_Destino INT NOT NULL,
 FOREIGN KEY(Id_Destino) REFERENCES Destinos (Id_Destino)
 );
 
 CREATE TABLE Usuario (
 Id_Usuario INT AUTO_INCREMENT PRIMARY KEY,
-Nome VARCHAR(50),
-Login VARCHAR(30),
-Senha VARCHAR(20),
+Nome VARCHAR(50) NOT NULL,
+Login VARCHAR(30) NOT NULL,
+Senha VARCHAR(20) NOT NULL,
 PermissõesdeAcesso VARCHAR(20)
 );
 
 CREATE TABLE Cliente (
 Id_Cliente INT AUTO_INCREMENT PRIMARY KEY,
-Nome VARCHAR(50),
-Email VARCHAR(30),
-Telefone VARCHAR(15),
-Endereço VARCHAR(30),
+Nome VARCHAR(50) NOT NULL,
+Email VARCHAR(30) NOT NULL,
+Telefone VARCHAR(15) NOT NULL,
+Endereço VARCHAR(30) NOT NULL,
 Id_Usuario INT,
 Id_Agencia INT,
 FOREIGN KEY(Id_Usuario) REFERENCES Usuario (Id_Usuario),
@@ -58,8 +58,8 @@ NumerodeVoo VARCHAR(20)
 CREATE TABLE Compra_de_Passagem (
 Id_Compra_Passagem INT AUTO_INCREMENT PRIMARY KEY,
 Data_da_Compra DATETIME,
-Valor_Pago INT,
-Status VARCHAR(20),
+Valor_Pago INT NOT NULL,
+Status VARCHAR(20) NOT NULL,
 Id_Passagem int,
 FOREIGN KEY(Id_Passagem) REFERENCES Passagem (Id_Passagem)
 );
