@@ -1,7 +1,7 @@
 # Entrega-Recode-Modulo-03
 # Agencia de VIagens Turistica!
 
-# Modelo Conceitua de BD
+# Modelo Conceitual de BD
 ![Conceitual](https://github.com/GuiAlvesR/Recode-Modulo-02/assets/139154854/2894d286-dfb2-4261-970b-6afe312658a8)
 
 <p>Relação Agência-Destinos:
