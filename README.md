@@ -22,7 +22,7 @@ Agência pode ter "0" cliente inicialmente e pode ter "n" clientes e cliente pre
 
 Relação Cliente-Usuario:
 
-Cliente é "1" usuário e somente "1" suario e usuário pertence a 1. cliente e a pode conter "n" clientes.
+Cliente é "1" usuário e somente associado a "1" usuario e Usuario pertence a 0 cliente e pode pertence a no máximo "1" cliente somente.
 
 Relação Cliente-Compra_de_ Passagem:
 
