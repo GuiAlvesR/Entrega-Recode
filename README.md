@@ -2,7 +2,7 @@
 # Agencia de VIagens Turistica!
 
 # Modelo Conceitual de BD
-![Conceitual](https://github.com/GuiAlvesR/Recode-Modulo-02/assets/139154854/2894d286-dfb2-4261-970b-6afe312658a8)
+![Conceitual](https://github.com/GuiAlvesR/Entrega-Recode/assets/139154854/69b20c6c-d925-4c47-aa17-a8412b8f1e69)
 
 <p>Relação Agência-Destinos:
 
@@ -33,7 +33,8 @@ Relação Compra_de_Passagem-Passagem:
 Compra para existir precisa no mínimo "1" passagem e pode conter "n" passagens(erro na imagem) e uma passagem pode estar em "0" compra e somente a "1" compra.</p>
 
 # Modelo Lógico de BD
-![Logico](https://github.com/GuiAlvesR/Recode-Modulo-02/assets/139154854/7018d10f-f666-41d1-a8d5-fc1ec707b1bd)
+![Logico](https://github.com/GuiAlvesR/Entrega-Recode/assets/139154854/16ea1d19-b33f-490e-af73-afe0f9f3dca6)
+
 
 # UML
 ![Agencia-UML](https://github.com/GuiAlvesR/Entrega-Recode/assets/139154854/5b100d33-a07b-4f58-bcb2-3d9d08bcea80)
