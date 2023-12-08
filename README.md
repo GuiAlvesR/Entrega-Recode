@@ -2,7 +2,8 @@
 # Agencia de VIagens Turistica!
 
 # Modelo Conceitual de BD
-![Conceitual](https://github.com/GuiAlvesR/Entrega-Recode/assets/139154854/69b20c6c-d925-4c47-aa17-a8412b8f1e69)
+![Conceitual](https://github.com/GuiAlvesR/Entrega-Recode/assets/139154854/27668f93-2b7a-4a95-9220-c89bc0bcd11e)
+
 
 <p>Relação Agência-Destinos:
 
@@ -14,7 +15,7 @@ Agência poder oferecer "0" promoções em um determinado tempo ou "n" promoçõ
 
 Relação Destinos-Promoções
 
-Destino pode ter no mínimo "1" promoção ou "n" promoções e promoção está ligado a "1" destino e a "1" destino.
+Destino pode ter no mínimo "1" promoção ou "n" promoções e promoção está ligado a "1" destino e tbm em "n" destinos.
 
 Relação Agência-Cliente:
 
@@ -33,7 +34,8 @@ Relação Compra_de_Passagem-Passagem:
 Compra para existir precisa no mínimo "1" passagem e pode conter "n" passagens(erro na imagem) e uma passagem pode estar em "0" compra e somente a "1" compra.</p>
 
 # Modelo Lógico de BD
-![Logico](https://github.com/GuiAlvesR/Entrega-Recode/assets/139154854/16ea1d19-b33f-490e-af73-afe0f9f3dca6)
+![Logico](https://github.com/GuiAlvesR/Entrega-Recode/assets/139154854/777e55dc-50ad-435d-a677-1e68f2b12112)
+
 
 
 # UML
